@@ -19,7 +19,7 @@ app.use(session({
   saveUninitialized : false,
   cookie: {maxAge: 60*60*1000},
   store: MongoStore.create({
-    mongoUrl:'mongodb+srv://admin:ji0707@cluster0.hygough.mongodb.net/?retryWrites=true&w=majority',
+    mongoUrl:'',
     dbName: 'forum'
   })
 }))
@@ -30,7 +30,7 @@ app.use(passport.session())
 //mongoDB 사용법
 const{MongoClient, ObjectId} = require('mongodb');
 let db;
-const url = 'mongodb+srv://admin:ji0707@cluster0.hygough.mongodb.net/?retryWrites=true&w=majority'
+const url = ''
 
 //접속 시작
 new MongoClient(url).connect().then((client) =>{
