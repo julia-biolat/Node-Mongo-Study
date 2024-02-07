@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/public/main.css" rel = "stylesheet">
+
+</head>
+<body class="grey-bg">
+
+    <form class="form-box" action="/edit" method="POST">
+
+        <h4>수정하기</h4>
+        <input name = "id" value = "<%= post._id %>" style = "display: none">
+        <input name = "title", value = "<%= post.title%>">
+        <input name = "content", value = "<%= post.content %>">
+        <button type="submit">전송</button>
+    </form> 
+
+    
+    
+</body>
+</html>
